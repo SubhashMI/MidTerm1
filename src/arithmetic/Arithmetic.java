@@ -15,6 +15,22 @@ import static java.time.Clock.system;
  * @author sivagamasrinivasan
  * 
  */
+
+
+
+    /**
+     * @param args the command line arguments
+     */
+   import arithmetic.ArithmeticBase.ArithmeticOperation;
+import java.util.Scanner;
+import static java.time.Clock.system;
+
+/** This class calls the method to perform 
+ * arithmetic operations based on user input
+ * execute the code check the output
+ * @author sivagamasrinivasan
+ * 
+ */
 public class Arithmetic 
 {
 
@@ -24,13 +40,19 @@ public class Arithmetic
     public static void main(String[] args) 
     {
        
-        ArithmeticBase r= new ArithmeticBase();
-        Scanner in= new Scanner(System.in);
-        int n= in.nextInt();
-        int m= in.nextInt();
-        double result = r.calculate(m,n);
-        System.out.println("result :" +result); 
-    
+         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the first number: ");
+        double x = sc.nextDouble();
+        System.out.println("Enter the second number: ");
+        double y = sc.nextDouble();
+        System.out.println("Enter the arithmetic operation to perform: ");
+        String operationInput = sc.next();
+        ArithmeticOperation operation = ArithmeticOperation.valueOf(operationInput.toUpperCase());
+
+        ArithmeticBase arithmeticBase = new ArithmeticBase();
+        double result = arithmeticBase.calculate(x, y, operation);
+
+        System.out.println("Result: " + result);
     }
 } // succesfully cloned it
 
