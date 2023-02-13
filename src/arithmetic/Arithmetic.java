@@ -6,21 +6,6 @@
 package arithmetic;
 
 
-import java.util.Scanner;
-import static java.time.Clock.system;
-
-/** This class calls the method to perform 
- * arithmetic operations based on user input
- * execute the code check the output
- * @author sivagamasrinivasan
- * 
- */
-
-
-
-    /**
-     * @param args the command line arguments
-     */
    import arithmetic.ArithmeticBase.ArithmeticOperation;
 import java.util.Scanner;
 import static java.time.Clock.system;
