@@ -32,5 +32,5 @@ public class Arithmetic
         System.out.println("result :" +result); 
     
     }
-}
+} // succesfully cloned it
 
